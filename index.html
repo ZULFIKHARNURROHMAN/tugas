@@ -1,1 +1,615 @@
-hello world
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#131b2e", "on-primary-fixed-variant": "#3f465c", "inverse-on-surface": "#eaf1ff", "on-surface-variant": "#45464d", "surface-variant": "#d3e4fe", "on-error-container": "#93000a", "on-surface": "#0b1c30", "secondary-fixed": "#ffddb8", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "secondary": "#855300", "secondary-container": "#fea619", "surface-dim": "#cbdbf5", "tertiary-fixed-dim": "#93ccff", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "on-secondary": "#ffffff", "tertiary-fixed": "#cce5ff", "tertiary-container": "#001d31", "on-tertiary-fixed-variant": "#004b73", "inverse-surface": "#213145", "outline": "#76777d", "surface-tint": "#565e74", "on-primary-fixed": "#131b2e", "primary": "#000000", "on-primary": "#ffffff", "surface-bright": "#f8f9ff", "on-secondary-fixed-variant": "#653e00", "on-tertiary-fixed": "#001d31", "surface-container-highest": "#d3e4fe", "primary-fixed-dim": "#bec6e0", "on-background": "#0b1c30", "surface": "#f8f9ff", "secondary-fixed-dim": "#ffb95f", "on-secondary-container": "#684000", "surface-container-high": "#dce9ff", "surface-container": "#e5eeff", "on-tertiary-container": "#188ace", "error-container": "#ffdad6", "on-secondary-fixed": "#2a1700", "on-error": "#ffffff", "tertiary": "#000000", "primary-fixed": "#dae2fd", "inverse-primary": "#bec6e0", "on-primary-container": "#7c839b", "outline-variant": "#c6c6cd", "error": "#ba1a1a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "2.5rem", "gutter-sm": "1rem", "margin-mobile": "1.25rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "code-spec": ["JetBrains Mono"], "headline-xl": ["Plus Jakarta Sans"], "label-technical": ["JetBrains Mono"], "body-lg": ["Inter"], "body-md": ["Inter"], "caption": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "code-spec": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-technical": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"><a class="flex items-center gap-space-sm" data-path="overview" href="#"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary-container text-[22px]">bolt</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">PT PILN</span><span class="font-label-technical text-label-technical text-outline uppercase tracking-wider mt-space-xs">Energy &amp; Electrical Eng</span></div></a><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-primary font-title-md"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="layanan" href="#layanan">Layanan</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="produk" href="#produk">Produk</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="proyek" href="#proyek">Proyek</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="tentang" href="#tentang">Tentang Kami</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontak" href="#kontak">Kontak</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-lg bg-secondary-container text-on-secondary-fixed font-title-md text-title-md hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-sm" href="#kontak">Hubungi Kami</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full bg-surface-container-low overflow-hidden">
+<!-- Schematic Micro-Grid Watermark -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="relative max-w-[1440px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Text Column -->
+<div class="lg:col-span-7 space-y-space-lg">
+<div class="inline-flex items-center gap-space-sm px-space-sm py-space-xs rounded bg-surface-container text-on-surface shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-technical text-label-technical tracking-wider text-secondary uppercase font-bold">KONTRAKTOR EPC &amp; FABRIKASI PANEL TERAKREDITASI</span>
+</div>
+<div class="space-y-space-md">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+              Solusi Rekayasa &amp; Kelistrikan Industri Terpercaya
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Penyedia switchgear tegangan rendah hingga menengah (LV/MV), kontraktor EPC berlisensi, dan pemeliharaan preventif berstandar PUIL 2020 &amp; IEC untuk keandalan daya tanpa kompromi.
+            </p>
+</div>
+<!-- CTAs & Cert Strip -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center h-12 px-space-lg rounded bg-primary text-on-primary font-title-md text-title-md hover:bg-inverse-surface shadow-md transition-all group" href="#kontak">
+<span>Konsultasi Teknis</span>
+<span class="material-symbols-outlined ml-space-xs text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center h-12 px-space-lg rounded bg-surface-container-lowest text-primary font-title-md text-title-md shadow-sm hover:bg-surface-variant transition-colors" href="#produk">
+<span>Lihat Produk</span>
+<span class="material-symbols-outlined ml-space-xs text-[18px]">inventory_2</span>
+</a>
+<div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-label-technical text-label-technical text-outline font-semibold">SPLN • IEC 61439-2</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Mock/Telemetry Blueprint -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
+<!-- Header bar of telemetry -->
+<div class="bg-primary-container text-on-primary px-space-md py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-code-spec text-code-spec">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>SYSTEM_FEED_MONITOR // PILN-01</span>
+</div>
+<span class="font-label-technical text-label-technical text-on-primary-container">50.02 HZ • NOMINAL</span>
+</div>
+<!-- Main Engineering Graphic -->
+<div class="relative h-72 w-full">
+<img class="w-full h-full object-cover" data-alt="Modern high-voltage electrical substation control room and switchgear panels with glowing status LED indicators, clean industrial engineering setting, cool slate and metallic tones with warm safety orange accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9gePJbTyHN9XfizQlMvzmaq8W2gEsQahlxpCwssHJKFmPCLFQPTkhdHPen2Ww2uOGALfKiZbRo3PTvEByDzO0fx6ShcAgmRSpjzvoFuTHUlvf5mQACZts2-8WB5ElXPpdIIIgTa59DtabbsCta2nMrrjPlU_ZInN2fAeCVm_ikZqbb7MMP1o3xkX2i_vE9UG91-7UCCXzelC43mZ3htgOLJNO-VrHdFUGuq6yrdwh26jyx1MnPgU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent flex flex-col justify-end p-space-md">
+<div class="grid grid-cols-3 gap-space-sm text-on-primary">
+<div class="p-space-xs rounded bg-surface-container-lowest/10 backdrop-blur-sm">
+<span class="font-label-technical text-label-technical text-tertiary-fixed-dim block">BUSBAR 1</span>
+<span class="font-code-spec text-code-spec font-bold">20.4 kV</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/10 backdrop-blur-sm">
+<span class="font-label-technical text-label-technical text-tertiary-fixed-dim block">MAIN INCOMING</span>
+<span class="font-code-spec text-code-spec font-bold">2850 A</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/10 backdrop-blur-sm">
+<span class="font-label-technical text-label-technical text-secondary-fixed block">POWER FACTOR</span>
+<span class="font-code-spec text-code-spec font-bold">0.99 pf</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Live Dispatch Callout -->
+<div class="p-space-md bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">health_and_safety</span>
+<div>
+<div class="font-title-md text-title-md text-primary">Operasional Gardu Stabil</div>
+<div class="font-caption text-caption text-outline">Pusat Fabrikasi JIEP Pulogadung Aktif</div>
+</div>
+</div>
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface font-code-spec text-label-technical rounded">LIVE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- KPI METRIC STRIP -->
+<div class="mt-space-xl grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm">
+<div class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Total Realisasi</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">500+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Proyek Industri Selesai</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm">
+<div class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Keselamatan Kerja</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">99.98%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">K3 SMK3 Compliance Rate</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm">
+<div class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Dukungan Lapangan</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">24/7</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Respons Tanggap Darurat</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm">
+<div class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Rekam Jejak</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">15+ Thn</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dedikasi Engineering Nasional</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LAYANAN REKAYASA UTAMA (#layanan) -->
+<section class="w-full py-space-xl bg-surface" id="layanan">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin space-y-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-widest">// PILN CAPABILITIES</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Layanan Rekayasa Utama</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Solusi menyeluruh mulai dari studi kelayakan, perakitan panel modular, konstruksi lapangan, hingga audit performa berkala.
+          </p>
+</div>
+<div class="hidden md:flex items-center gap-space-xs font-label-technical text-label-technical text-outline">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>ISO 9001 • PUIL 2020 COMPLIANT</span>
+</div>
+</div>
+<!-- 4 Service Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service 1 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">grid_view</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary font-bold">TYPE-TESTED FORM 4B</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Fabrikasi Panel LV/MV</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Perakitan LVMDP, Sub-Distribution Board, Capacitor Bank, dan Cubicle MV 24kV dengan proteksi busbar tersegregasi dan uji isolasi ketat.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded p-space-sm">
+<span class="font-code-spec text-label-technical text-on-surface block font-semibold">SPEC: IEC 61439-1/2, IP54</span>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary font-bold">TURNKEY CONTRACTOR</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Kontraktor &amp; EPC</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Konstruksi gardu distribusi pelanggan tegangan menengah, pemasangan kabel tanam XLPE, terminasi MV, dan penyambungan busduct industri.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded p-space-sm">
+<span class="font-code-spec text-label-technical text-on-surface block font-semibold">SCOPE: TRAFO 20kV • BUSDUCT</span>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">thermostat</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary font-bold">PREVENTIVE &amp; AUDIT</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Maintenance &amp; Termal</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Inspeksi thermovision inframerah FLIR, uji kontak breaker, pengujian tahanan isolasi Megger, dan penggantian komponen switchboard kritis.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded p-space-sm">
+<span class="font-code-spec text-label-technical text-on-surface block font-semibold">TOOL: FLIR THERMAL • HIPOT</span>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">schema</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary font-bold">ENGINEERING &amp; PERMIT</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Konsultasi Desain SLD</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Kalkulasi hubung singkat, koordinasi proteksi berbasis simulasi ETAP, desain Single Line Diagram terinci, serta pendampingan uji laik operasi (SLO).
+            </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low rounded p-space-sm">
+<span class="font-code-spec text-label-technical text-on-surface block font-semibold">OUTPUT: ETAP • IZIN SLO ESDM</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KATALOG PRODUK PILIHAN (#produk) -->
+<section class="w-full py-space-xl bg-surface-container-low" id="produk">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-widest">// SUPPLY CATALOG</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Katalog Produk Pilihan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Peralatan elektrikal bersertifikasi resmi, tahan beban ekstrem, dan siap dipasok langsung dari fasilitas manufaktur kami.
+          </p>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary font-title-md text-title-md hover:text-secondary transition-colors" href="#kontak">
+<span>Katalog Lengkap (PDF Request)</span>
+<span class="material-symbols-outlined text-[18px]">download</span>
+</a>
+</div>
+<!-- 6 Flagship Products Grid (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product 1 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Heavy-duty electrical low voltage main distribution panel (LVMDP) cabinet Form 4b with copper busbars, circuit breakers, and metering digital instruments in high tech factory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlWnldVdWbNRdzwjPxDzuhOxe4Vb7E007hndlwOlTSCVrBKbMMAa9kUeUn6kPU9ZeW8SMDfAoliavkaXxpvTzzCQBYEgYVHdXu-XTg8vEp33-r5rx1eveRf4iyGRlj6SeEbIaOka3uBLmsr52Tl542Yw4z_-UJbqmpl7UisAUcEdo3TdLivw7Clhe5QWjLGOFDxv9-l9Gt91_OsAUNflojohq9QNNikfTIf74SnLUinedlL-ZdC4o"/>
+<div class="absolute top-3 right-3 px-space-xs py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-technical text-label-technical font-bold">
+              Siap Pasok
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-technical text-label-technical text-outline">PILN-LVMDP-3200</div>
+<h3 class="font-title-md text-title-md text-primary mt-space-xs">Panel Distribusi LVMDP 3200A</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Form 4b type-tested, tegangan kerja 415/690V AC, busbar tembaga murni 99.9% Cu-ETP.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-code-spec text-label-technical text-outline">IEC 61439 • IP54</span>
+<a class="px-space-md py-space-xs rounded bg-primary text-on-primary font-title-md text-body-sm hover:bg-inverse-surface transition-colors" href="#kontak">Minta Penawaran</a>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Cross-section of high voltage 20kV XLPE insulated industrial power cable showing copper conductor, semiconductor shield, and durable outer sheath on clean neutral background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW9No53WChvaq_GNNvta7LAyo3CwBcnPJ2jwAb5EQf3sOoKXcm9D3b0WyA6K0mpx2_rOgjv691xA0RDStbQ20gqTbOYU0xdwrFpRpciBc3fE3LxI1NchjPm7xDZe1Gzp8GXM4VPCprQMW1ZJ8DZUM2WOIDR1P7BsPWr7GPI7r-nbfnqQAv6TpAqSZwfR1Fi1jW0kxsxYbsh_hmqsPLxt7cBAQMfZpehx58MSo6qzMr9L7ktMMAsbo"/>
+<div class="absolute top-3 right-3 px-space-xs py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-technical text-label-technical font-bold">
+              Siap Pasok
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-technical text-label-technical text-outline">PILN-CBL-XLPE-20KV</div>
+<h3 class="font-title-md text-title-md text-primary mt-space-xs">Kabel Power XLPE 20kV</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Tipe N2XSY / N2XSEBY penghantar tembaga terisolasi XLPE tahan rembesan air dan tekanan tanah.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-code-spec text-label-technical text-outline">SPLN 43-5 • IEC 60502</span>
+<a class="px-space-md py-space-xs rounded bg-primary text-on-primary font-title-md text-body-sm hover:bg-inverse-surface transition-colors" href="#kontak">Minta Penawaran</a>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Array of industrial three phase molded case circuit breakers (MCCB) and miniature circuit breakers (MCB) arranged cleanly with terminal connectors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPRUO8-VmqZeRSKz_7BLXNftMlrXK6SFGeEYqfivWsDEDWQRqb6KkIrgxVOaOY8_G03UWYBpSRVlR5vSjIOHcj8TEhwA9hDo5SpaOf7jsvz7m81Ghv6gEyFhochSYecIxK6UzZSX2EdPSzoVT3-i52yK4DIBUUupmufQrDPCzGoBYWw1JtagHDaRwaFM_gTbR8A61EW81VnBB7Yb4ga_bnc8hSui-xH9rxXT69bDLz1ZMClCbIgqk"/>
+<div class="absolute top-3 right-3 px-space-xs py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-technical text-label-technical font-bold">
+              Siap Pasok
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-technical text-label-technical text-outline">PILN-MCB-3P-IND</div>
+<h3 class="font-title-md text-title-md text-primary mt-space-xs">MCB &amp; Breaker Daya 3-Phase</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Rentang kapasitas 10A hingga 125A dengan kapasitas pemutusan arus hubung singkat hingga 25kA.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-code-spec text-label-technical text-outline">ICU 25kA • PUIL 2020</span>
+<a class="px-space-md py-space-xs rounded bg-primary text-on-primary font-title-md text-body-sm hover:bg-inverse-surface transition-colors" href="#kontak">Minta Penawaran</a>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Weatherproof stainless steel 316L industrial electrical junction box and enclosure with robust locks and neoprene gasket seal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYSwyT4SWykROZ2Nx3FN466TIpBohpBvy495jb7EwFoHqiIBcZiUa1dFtJgU_iOtHJAYskHgY-UFEj6vBFzgNKDvXuR1M7hRQktFsfKh4MAbi1ow8NXZdwc1O-xYHewrCNM7lp5R_EUvziTNF8u9MGAPzkwOIQxUWzkInSmA48Eiy3i-FwyEyMWjaGtc1x1_hAUlQTpiRcMqJgwUVB82zlOoVejIbrU6DZwfi4HgmlIumE07YPWqQ"/>
+<div class="absolute top-3 right-3 px-space-xs py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-technical text-label-technical font-bold">
+              Siap Pasok
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-technical text-label-technical text-outline">PILN-ENC-SS316L</div>
+<h3 class="font-title-md text-title-md text-primary mt-space-xs">Box Panel Stainless Steel 316L</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Proteksi outdoor anti karat IP66 untuk lingkungan korosif, kimia, dan kilang lepas pantai.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-code-spec text-label-technical text-outline">IP66 • NEMA 4X</span>
+<a class="px-space-md py-space-xs rounded bg-primary text-on-primary font-title-md text-body-sm hover:bg-inverse-surface transition-colors" href="#kontak">Minta Penawaran</a>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Industrial LED high bay luminaire fixture 200W with heavy finned aluminum heat sink and optical glass diffuser in warehouse facility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUkbIygWk1c5-QcJcIDVMLaw0n--ojuQggNqd6Uf7WczgNgcZnif4lyLQgZ_b3AMJaDc5wyhC2F2JqwYaaTdjiEPpAJKgGuGGhEhLzJY0THVg35j-rAO19SYslm_qF70NWbIjaRYRfDPchRrTmYuo9UNUqi6YPmftZx8NzL9kS_l4D_Bg5djmwByFqjPK-rFUDwmOOhhkVRgx8bvRY3-pW7RR94-UUO2RY9l1QtEGdveqNn32tLW0"/>
+<div class="absolute top-3 right-3 px-space-xs py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-technical text-label-technical font-bold">
+              Siap Pasok
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-technical text-label-technical text-outline">PILN-LGT-HB200W</div>
+<h3 class="font-title-md text-title-md text-primary mt-space-xs">Lampu LED High Bay 200W</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Efikasi tinggi 160 lm/W, proteksi surge 10kV, dirancang untuk pabrik dan gudang bersuhu tinggi.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-code-spec text-label-technical text-outline">32,000 LM • CRI 80+</span>
+<a class="px-space-md py-space-xs rounded bg-primary text-on-primary font-title-md text-body-sm hover:bg-inverse-surface transition-colors" href="#kontak">Minta Penawaran</a>
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Industrial 63 Ampere IP67 red and blue high-voltage plug and socket receptacle connector with locking collar on clean technical platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYUWbTZ5EJJPbKnEMp9Xl3WNszyuOsQ9F-21nm4MI9JC1RLtZf-qkpzLbshIPmbHNlme_VfTv9ZdcKZMemdjZDrZeOSm3WFbA4-IZ5yctPM4qN0xlvwqNcdT-0Hn6Yq68CYgYJLoZuMi5vwXo8UdlQtc6Nb03wHSQcHxKaxsKppl0-DyNwbq52R2Hmzn-64sqdHmHr_m3kTbS04fGQQz7E80i0JKgbPy4HDqJAJS8ggh5iLH3uKN8"/>
+<div class="absolute top-3 right-3 px-space-xs py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-technical text-label-technical font-bold">
+              Siap Pasok
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="font-label-technical text-label-technical text-outline">PILN-PLG-63A-IP67</div>
+<h3 class="font-title-md text-title-md text-primary mt-space-xs">Plug &amp; Socket Industri 63A IP67</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Koneksi daya cepat kedap air, tahan benturan mekanis IK09, cocok untuk genset dan derek kontainer.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-code-spec text-label-technical text-outline">IEC 60309 • IK09</span>
+<a class="px-space-md py-space-xs rounded bg-primary text-on-primary font-title-md text-body-sm hover:bg-inverse-surface transition-colors" href="#kontak">Minta Penawaran</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PORTOFOLIO & REKAM JEJAK (#proyek) -->
+<section class="w-full py-space-xl bg-surface" id="proyek">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-widest">// PROVEN TRACK RECORD</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Portofolio &amp; Rekam Jejak</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Penyelesaian proyek kelistrikan berskala besar dengan jaminan keamanan dan sertifikasi kelaikan operasi (SLO).
+          </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-code-spec text-code-spec text-on-surface">ZERO ACCIDENT RECORD</span>
+</div>
+</div>
+<!-- 3 Featured Projects in Modern Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Project 1 -->
+<div class="group rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial cement manufacturing plant at twilight with heavy machinery and complex electrical distribution systems, dramatic industrial architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ON-Mt38-DYE2NVo-tYnmwW66NCYgL5u7PAVwkuPRUB2u7My2nIne-Vn3jBTozAU47GH7PR1W0hLdV6HPsVvp5dSvJCtWDgP2HO2VkWogT7Nn22jWwkIq1BLF_age2Ank7aLcuBMSvJZWU2gLTanmlJBd4ChFuOVHseYpAwC0p2tl_BR_nfRjXJrkIQVpm4mY798neTjdnMJk8MDiDEZoKbdqxAIgSnCdfIAW0BWlJjgK-eNe0vQ"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-technical text-label-technical">
+              HEAVY INDUSTRY
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-outline">LOKASI: CILEGON, BANTEN</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">PT Krakatau Semen Cilegon</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Desain manufaktur dan instalasi panel utama LVMDP 4000A Form 4b dengan sistem interlock mekanis-elektrikal untuk kontinuitas jalur produksi klinker.
+              </p>
+</div>
+<div class="pt-space-sm border-t-0 space-y-space-xs">
+<div class="flex items-center justify-between font-label-technical text-label-technical">
+<span class="text-outline">STANDARISASI</span>
+<span class="font-semibold text-primary">IEC 61439-2 COMPLIANT</span>
+</div>
+<div class="flex items-center justify-between font-label-technical text-label-technical">
+<span class="text-outline">WAKTU EKSEKUSI</span>
+<span class="font-semibold text-primary">45 HARI KALENDER</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Mission critical enterprise tier 3 data center interior with server racks, yellow overhead fiber trays, and redundant electrical power distribution busducts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsdDB1fqkQ069yyW8t2T3S0jfky_balF0f580Y4RJx-3S7Utoh1QId6C6JnVfVrSD_Pakta4kw8GVkV-kD6qR28luIsiDsNTvbYhhqKqPR0YoPAfOET1Ekj5NgAgNNd2A8EynsbQgm0VW34OXj2519hQgblaMRzjc0_E6o4cpqQNPtZ1JhPX1KhTJa_ZxAGUXYT89idK4lIT9_0HKvfZVornaoMOu3YPi8AdFS8xIPRub-SDycz04"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-technical text-label-technical">
+              CRITICAL INFRASTRUCTURE
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-outline">LOKASI: BSD CITY, TANGERANG</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Data Center Tier 3 BSD</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pemasangan ganda trafo dry-type 2500 kVA, panel otomatisasi sinkronisasi genset (Automatic Mains Failure), dan busduct sandwich 3200A 2N redundancy.
+              </p>
+</div>
+<div class="pt-space-sm border-t-0 space-y-space-xs">
+<div class="flex items-center justify-between font-label-technical text-label-technical">
+<span class="text-outline">UPTIME RATING</span>
+<span class="font-semibold text-primary">99.982% AVAILABILITY</span>
+</div>
+<div class="flex items-center justify-between font-label-technical text-label-technical">
+<span class="text-outline">STANDARISASI</span>
+<span class="font-semibold text-primary">PUIL 2020 • UPTIME TIER 3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Electrical engineer with digital thermovision FLIR camera conducting temperature audit on large factory transformer substation, professional technical inspection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtKfuggEOHnVs6L3jPjGgXxVu68frv1BBAa7caBiaXQdOy1cU2jwfGRxqJbRf3HapypxB64RlpSQclo7fFP6Tl_xn7CvOELaJbFu_E0hxI_qsGth2JARt7jVEOB1iIuu0IqDjMcsMfN5MqlF-g-LmCyRLTcUT9T9msavc0uaFezQXHJwjlSYTGCZ-HJ_YZU8o5YqNJhxtsGVS_i1VUEEMiEoYFPUkzOfbl5TkTwWpWhuh9sIQdZIY"/>
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-technical text-label-technical">
+              FACILITY MAINTENANCE
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-outline">LOKASI: CIKARANG, BEKASI</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Kawasan Industri MM2100</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Audit termal komprehensif 12 unit gardu distribusi terpusat, pengujian kontak vacuum breaker, pembersihan busbar offline, dan peremajaan sistem relay.
+              </p>
+</div>
+<div class="pt-space-sm border-t-0 space-y-space-xs">
+<div class="flex items-center justify-between font-label-technical text-label-technical">
+<span class="text-outline">TITIK AUDIT</span>
+<span class="font-semibold text-primary">12 GARDU (140+ CUBICLES)</span>
+</div>
+<div class="flex items-center justify-between font-label-technical text-label-technical">
+<span class="text-outline">HASIL</span>
+<span class="font-semibold text-primary">100% BEBAS HOTSPOT KRITIS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TENTANG KAMI & KUALIFIKASI LEGALITAS (#tentang) -->
+<section class="w-full py-space-xl bg-surface-container-low" id="tentang">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Visual & Location Map Pin -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<div class="h-60 w-full relative">
+<img class="w-full h-full object-cover" data-alt="High tech assembly workshop at PT PILN industrial electrical manufacturing facility in Pulogadung Jakarta with skilled engineers wiring control panels safely." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1g56ClGA8I9wZXsOAoQQ1KBRAoFwYEii-X5v3UXVHVpLxs4DEXVtkRWhYe_sAxI3p9v7nf1XbH4tGq9Iyrl0UHgTGuS4iwx8ZmAOewBCyY-HD_oumLtWtKNGNpe6yJDNsQxXx8VGSaR-JqMImvX_cIhQwUnq-IAapiH2GO4OPXUm84PDlOPbaQJHegcPn5wwEBYUoca-NMaTkez8Jxhp6Lpv2nerLfl0MJNhjXhp4VUi1uYRLaL8"/>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-technical text-label-technical text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">factory</span>
+<span>FASILITAS WORKSHOP &amp; ENGINEERING</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">
+                Kawasan Industri Pulogadung (JIEP) Blok E-12, Jakarta Timur
+              </p>
+<p class="font-caption text-caption text-outline">
+                Lahan perakitan panel seluas 2,800 m² berstandar K3 dengan sarana type-test terintegrasi.
+              </p>
+</div>
+</div>
+</div>
+<!-- Corporate Summary & Legal Badges -->
+<div class="lg:col-span-7 space-y-space-md">
+<span class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-widest">// CORPORATE QUALIFICATIONS</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Komitmen Presisi &amp; Kepatuhan Standar Mutu
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Didirikan dengan visi memperkuat ketahanan infrastruktur kelistrikan nasional, <strong>PT PILN</strong> memadukan keahlian teknik berlisensi tinggi dengan manajemen mutu ketat. Setiap produk switchgear dan instalasi gardu dirancang untuk melampaui tolok ukur keamanan teknis industri berat dan komersial modern.
+          </p>
+<!-- 4 Legal Certification Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-sm">
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">verified_user</span>
+<span class="font-title-md text-body-sm text-primary font-bold">ISO 9001:2015</span>
+<span class="font-caption text-caption text-outline">Quality Management</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">health_and_safety</span>
+<span class="font-title-md text-body-sm text-primary font-bold">SMK3 Kemenaker</span>
+<span class="font-caption text-caption text-outline">Sistem K3 PP 50/2012</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">badge</span>
+<span class="font-title-md text-body-sm text-primary font-bold">AKLI Anggota Penuh</span>
+<span class="font-caption text-caption text-outline">Kontraktor Listrik</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">gavel</span>
+<span class="font-title-md text-body-sm text-primary font-bold">IUJPTL ESDM</span>
+<span class="font-caption text-caption text-outline">Izin Usaha Ketenagalistrikan</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KONTAK LANGSUNG & FORMULIR PENAWARAN RINGKAS (#kontak) -->
+<section class="w-full py-space-xl bg-surface" id="kontak">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin space-y-space-xl">
+<div class="space-y-space-xs">
+<span class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-widest">// QUICK CONSULTATION &amp; INQUIRY</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Hubungi Konsultan Teknik Kami</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Diskusikan kebutuhan spesifikasi teknis, survei lokasi gardu, atau permintaan penawaran komersial (BoQ) bersama tim teknisi senior.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Side: Fast Contact Details -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<h3 class="font-title-md text-title-md text-primary">Informasi Resmi Kantor &amp; Workshop</h3>
+<div class="space-y-space-sm font-body-sm text-body-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">location_on</span>
+<div>
+<strong class="text-primary block">Pabrik &amp; Workshop Pulogadung</strong>
+<span class="text-on-surface-variant">Kawasan Industri Pulogadung (JIEP) Blok E-12, Jakarta Timur 13930, Indonesia</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">phone_in_talk</span>
+<div>
+<strong class="text-primary block">WhatsApp Hotline Tanggap Cepat</strong>
+<a class="text-primary font-code-spec text-code-spec font-bold hover:text-secondary" href="https://wa.me/6281198767456">+62 811-9876-PILN (7456)</a>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">mail</span>
+<div>
+<strong class="text-primary block">Email Penawaran Resmi</strong>
+<a class="text-primary font-code-spec text-code-spec hover:text-secondary" href="mailto:sales@piln-electrical.co.id">sales@piln-electrical.co.id</a>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">schedule</span>
+<div>
+<strong class="text-primary block">Jam Operasional Layanan</strong>
+<span class="text-on-surface-variant">Senin - Jumat: 08.00 - 17.00 WIB<br/><span class="text-secondary font-semibold">24/7 Tim Respons Darurat</span></span>
+</div>
+</div>
+</div>
+<!-- Fast Response SLA Chip -->
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-technical text-label-technical text-on-surface">Rata-rata respons penawaran teknis dalam 24 jam kerja</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Clean Quotation Form -->
+<div class="lg:col-span-7">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<form class="space-y-space-md" id="inquiry-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-space-xs">
+<label class="font-label-technical text-label-technical text-on-surface uppercase" for="full-name">Nama Lengkap *</label>
+<input class="w-full h-11 px-space-sm rounded bg-surface text-primary font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-inner" id="full-name" placeholder="Contoh: Ir. Budi Santoso" required="" type="text"/>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-technical text-label-technical text-on-surface uppercase" for="company-email">Email Perusahaan *</label>
+<input class="w-full h-11 px-space-sm rounded bg-surface text-primary font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-inner" id="company-email" placeholder="budi@perusahaan.co.id" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-space-xs">
+<label class="font-label-technical text-label-technical text-on-surface uppercase" for="phone-number">Nomor WhatsApp *</label>
+<input class="w-full h-11 px-space-sm rounded bg-surface text-primary font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-inner" id="phone-number" placeholder="+62 812-xxxx-xxxx" required="" type="tel"/>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-technical text-label-technical text-on-surface uppercase" for="category">Kategori Kebutuhan *</label>
+<select class="w-full h-11 px-space-sm rounded bg-surface text-primary font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-inner" id="category" required="">
+<option value="">Pilih Kategori Kebutuhan</option>
+<option value="fabrikasi-panel">Fabrikasi Panel LV / MV</option>
+<option value="kontraktor-epc">Kontraktor &amp; EPC Gardu Listrik</option>
+<option value="maintenance-termal">Maintenance &amp; Audit Termal FLIR</option>
+<option value="konsultasi-desain">Konsultasi Desain SLD &amp; ETAP</option>
+<option value="pengadaan-produk">Pengadaan Produk Elektrikal</option>
+</select>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-technical text-label-technical text-on-surface uppercase" for="specs-notes">Catatan Spesifikasi / Rincian Kebutuhan</label>
+<textarea class="w-full p-space-sm rounded bg-surface text-primary font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-inner resize-none" id="specs-notes" placeholder="Deskripsikan estimasi kapasitas (kVA/Ampere), lokasi pekerjaan, atau lampiran daftar material..." rows="3"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<span class="font-caption text-caption text-outline">Data spesifikasi Anda dilindungi kerahasiaan NDA industri.</span>
+<button class="h-11 px-space-lg rounded bg-secondary-container text-on-secondary-fixed font-title-md text-title-md hover:bg-secondary-fixed-dim transition-colors shadow-sm inline-flex items-center justify-center gap-space-xs" type="submit">
+<span>Kirim Permintaan</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<!-- Form Success Feedback Alert -->
+<div class="hidden p-space-sm rounded bg-surface-container text-primary font-body-sm flex items-center gap-space-sm" id="form-feedback">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Terima kasih! Permintaan spesifikasi Anda telah diterima. Tim sales engineering akan segera menghubungi Anda.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center"><span class="material-symbols-outlined text-secondary-container text-[18px]">bolt</span></div><span class="font-title-md text-title-md text-on-primary tracking-tight">PT PILN</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Mitra terpercaya penyedia rekayasa elektrikal industri, instalasi tegangan menengah-tinggi, otomatisasi daya, dan kepatuhan standar SPLN/IEC di seluruh Indonesia.</p><div class="flex items-center gap-space-xs font-label-technical text-label-technical text-outline"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span>CERTIFIED IEC • PUIL • SPLN</span></div></div><div class="space-y-space-md"><div class="font-title-md text-title-md text-on-primary">Navigasi Cepat</div><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="flex items-center"><a class="text-on-primary-container hover:text-on-primary transition-colors" href="#layanan">Rekayasa Sistem Tenaga</a></li><li class="flex items-center"><a class="text-on-primary-container hover:text-on-primary transition-colors" href="#produk">Katalog Switchgear &amp; Panel</a></li><li class="flex items-center"><a class="text-on-primary-container hover:text-on-primary transition-colors" href="#proyek">Portofolio Gardu Induk</a></li><li class="flex items-center"><a class="text-on-primary-container hover:text-on-primary transition-colors" href="#tentang">Profil &amp; Sertifikasi Perusahaan</a></li></ul></div><div class="space-y-space-md"><div class="font-title-md text-title-md text-on-primary">Kantor Operasional</div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Kawasan Industri Pulogadung Blok E-12<br/>Jakarta Timur 13930, Indonesia</p><div class="space-y-space-xs font-code-spec text-code-spec text-on-primary-container"><div>TEL: +62 (21) 4682-9900</div><div>DISPATCH: +62 811-920-8000</div></div></div><div class="space-y-space-md"><div class="font-title-md text-title-md text-on-primary">Dukungan &amp; Respon Cepat</div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Konsultasi teknis, audit efisiensi daya, dan emergency dispatch switchboard 24/7.</p><a class="inline-flex items-center justify-center w-full h-10 px-space-md rounded-lg bg-surface-container-lowest text-primary font-title-md text-title-md hover:bg-surface-variant hover:text-on-surface transition-colors" href="#kontak">Hubungi Konsultan Teknik</a></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-primary-container"><p>© 2025 PT PILN (Solusi Energi &amp; Rekayasa Elektrikal Industri). Hak Cipta Dilindungi Undang-Undang.</p><div class="flex items-center gap-space-lg font-code-spec text-code-spec"><span class="text-outline">REG: 04.912.PUIL.2024</span><span class="text-outline">STATUS: GRID ACTIVE</span></div></div></div></footer></body></html>
